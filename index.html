@@ -12,7 +12,7 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Builds.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body style="background-color: #2a2a2a">
+  <body onload="unityInstance.SetFullscreen(1)" style="background-color: #2a2a2a">
     <div class="webgl-content">
       <div id="unityContainer" style="width: 1600px; height: 900px"></div>
       <div class="footer">
