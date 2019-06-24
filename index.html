@@ -10,17 +10,6 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Builds.json", {onProgress: UnityProgress});
-      
-      window.onload = function() {
-      var context = new AudioContext();
-      // Setup all nodes
-      }
-      // One-liner to resume playback when user interacted with the page.
-      document.querySelector('button').addEventListener('click', function() {
-        context.resume().then(() => {
-          console.log('Playback resumed successfully');
-      });
-});
     </script>
     <style>
         * {
